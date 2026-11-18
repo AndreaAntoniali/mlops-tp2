@@ -1,0 +1,9 @@
+# Sent to Docker at build time otherwise -- the virtualenv alone is a few GB.
+.venv/
+.git/
+.dvc/
+data/
+mlruns/
+mlflow.db
+reports/
+**/__pycache__/
