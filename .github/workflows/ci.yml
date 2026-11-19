@@ -11,6 +11,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+          cache: pip
 
       - name: Install dependencies
         run: pip install -r requirements.txt
@@ -26,3 +27,5 @@ jobs:
 
       - name: Show the metrics
         run: dvc metrics show
+      - name: Check the F1 threshold
+        run: python src/check_f1.py
