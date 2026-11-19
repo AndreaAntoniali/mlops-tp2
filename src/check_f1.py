@@ -11,8 +11,14 @@ import sys
 THRESHOLD = 0.75   # the TP model scores about 0.76
 
 ##### cycle 4, etape 4 : lisez le f1 dans metrics.json (json.load)
-f1 = None
+f1 = json.load(f)["f1"]
 
 print(f"f1 = {f1}  (threshold {THRESHOLD})")
 
 ##### cycle 4, etape 4 : sortez avec le code 0 si f1 >= THRESHOLD, 1 sinon (sys.exit)
+if f1 >= THRESHOLD:
+    print("OK: model is good enough")
+    sys.exit(0)
+else:
+    print(f"FAIL: f1 {f1} is below {THRESHOLD}")
+    sys.exit(1)
