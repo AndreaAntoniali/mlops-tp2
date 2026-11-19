@@ -40,7 +40,7 @@ stages:
     outs:
     - path: models/model.pkl
       hash: md5
-      md5: 71f9b70976b188cd7fa57ddd70cb60b1
+      md5: 33c4cd527d42bf134f55d2e4bd73d679
       size: 271945
   evaluate:
     cmd: python src/evaluate.py
@@ -52,7 +52,7 @@ stages:
       nfiles: 2
     - path: models/model.pkl
       hash: md5
-      md5: 71f9b70976b188cd7fa57ddd70cb60b1
+      md5: 33c4cd527d42bf134f55d2e4bd73d679
       size: 271945
     - path: src/evaluate.py
       hash: md5
