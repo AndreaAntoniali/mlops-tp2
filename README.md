@@ -1,5 +1,6 @@
 # TP 2 — Pipelines, validation, CI, surveillance
 
+[![CI](https://github.com/AndreaAntoniali/mlops-tp2/actions/workflows/ci.yml/badge.svg)](https://github.com/AndreaAntoniali/mlops-tp2/actions/workflows/ci.yml)
 Trois scripts, un jeu de données sous DVC, et aucun pipeline : c'est à vous de
 l'écrire.
 
